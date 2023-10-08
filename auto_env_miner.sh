@@ -36,7 +36,6 @@ compute=$((compute / 10))
 # 安装环境
 apt update && apt upgrade -y
 apt install git cmake make sudo -y
-git clone https://github.com/shanghaicoder/XENGPUMiner.git
 cd XENGPUMiner || return
 chmod +x build.sh
 apt install ocl-icd-opencl-dev -y
