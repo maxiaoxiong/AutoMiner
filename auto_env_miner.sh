@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 获取变量
-compute=860
+compute=false
 account=false
 server=false
 proxy=false
@@ -45,6 +45,12 @@ pip install -U -r requirements.txt
 apt install screen -y
 sed -i '5d' config.conf
 sed -i "5i\account = $account" config.conf
+
+# 如果设置了需要回传信息,则覆盖miner文件
+if $server; then
+    cp ./miner.py ../XENGPUMiner
+fi
+
 
 # 替换代理
 if $proxy; then
