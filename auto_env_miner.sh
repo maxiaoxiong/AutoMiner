@@ -40,7 +40,11 @@ cd XENGPUMiner || return
 chmod +x build.sh
 apt install ocl-icd-opencl-dev -y
 ./build.sh  -cuda_arch sm_"$compute"
+apt install python-is-python3 pip -y
 pip install -U -r requirements.txt
+pip install passlib
+pip install tqdm
+pip install argon2_cffi
 apt install screen -y
 sed -i '5d' config.conf
 sed -i "5i\account = $account" config.conf
