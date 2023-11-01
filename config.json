@@ -1,0 +1,17 @@
+{
+  "vast_api_key": "a7698ab720b9525b36abe8c247cef30344d26d05cacbac80889a4b8e166fa022",
+  "eth_address": "0x24691e54afafe2416a8252097c9ca67557271475",
+  "machine_nums": 4,
+  "machine_configs": [
+    {
+      "gpu_name": "RTX_4090",
+      "gpu_nums": 8,
+      "dph": 2
+    },
+    {
+      "gpu_name": "RTX_3090",
+      "gpu_nums": 8,
+      "dph": 1.5
+    }
+  ]
+}
